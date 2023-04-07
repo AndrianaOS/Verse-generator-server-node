@@ -4,21 +4,21 @@ const app = express();
 const PORT = 3005;
 
 // FILE PATHS
-const identity = require("./identity.json");
-const covenant = require("./covenant.json");
-const deliverance = require("./deliverance.json");
-const governance = require("./governance.json");
-const transformation = require("./transformation.json");
-const help = require("./help.json");
-const blessings = require("./blessings.json");
-const salvation = require("./salvation.json");
-const ministry = require("./ministry.json");
-const healing = require("./healing.json");
-const discipline = require("./discipline.json");
-const purpose = require("./purpose.json");
-const standards = require("./standards.json");
-const repentance = require("./repentance.json");
-const boundaries = require("./boundaries.json");
+const identity = require("./verses/identity.json");
+const covenant = require("./verses/covenant.json");
+const deliverance = require("./verses/deliverance.json");
+const governance = require("./verses/governance.json");
+const transformation = require("./verses/transformation.json");
+const help = require("./verses/help.json");
+const blessings = require("./verses/blessings.json");
+const salvation = require("./verses/salvation.json");
+const ministry = require("./verses/ministry.json");
+const healing = require("./verses/healing.json");
+const discipline = require("./verses/discipline.json");
+const purpose = require("./verses/purpose.json");
+const standards = require("./verses/standards.json");
+const repentance = require("./verses/repentance.json");
+const boundaries = require("./verses/boundaries.json");
 
 app.get("/", function (request, response) {
   response.send("Welcome to my Bible verse server");
