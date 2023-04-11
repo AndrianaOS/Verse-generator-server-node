@@ -1,7 +1,10 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const PORT = 3005;
+
+app.use(cors());
 
 // FILE PATHS
 const identity = require("./verses/identity.json");
@@ -19,6 +22,12 @@ const purpose = require("./verses/purpose.json");
 const standards = require("./verses/standards.json");
 const repentance = require("./verses/repentance.json");
 const boundaries = require("./verses/boundaries.json");
+const promises = require("./verses/promises.json");
+const grace = require("./verses/grace.json");
+const freedom = require("./verses/freedom.json");
+const marriage = require("./verses/marriage.json");
+const fellowship = require("./verses/fellowship.json");
+const leadership = require("./verses/leadership.json");
 
 app.get("/", function (request, response) {
   response.send("Welcome to my Bible verse server");
@@ -150,6 +159,18 @@ app.get("/boundaries", function (request, response) {
 app.get("/boundaries/random", function (request, response) {
   response.json(pickFromArray(boundaries));
 });
+
+// PROMISES FUNCTIONS
+
+// GRACE FUNCTIONS
+
+// FREEDOM FUNCTIONS
+
+// MARRIAGE FUNCTIONS
+
+// FELLOWSHIP FUNCTIONS
+
+// LEADERSHIP FUNCTIONS
 
 // DELIVERANCE FUNCTIONS
 
